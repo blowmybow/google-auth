@@ -12,10 +12,7 @@ app.use(
   })
 );
 
-// app.set("view engine", "ejs");
-app.get("/", (req, res) => {
-  res.send('<a href="/auth/google">Authenticate with Google</a>');
-});
+app.set("view engine", "ejs");
 
 const userRoutes = require("./routes/userRoute");
 
